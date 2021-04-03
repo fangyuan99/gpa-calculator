@@ -1,39 +1,51 @@
 # 中南林业科技大学绩点计算器
+## 1.前言
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+之前已经在我的博客更新了一篇有关[5分制教务系统绩点计算](http://fangyuan99.gitee.io/blog/2020/10/14/%E6%95%99%E5%8A%A1%E7%B3%BB%E7%BB%9F%E7%BB%A9%E7%82%B9%E8%AE%A1%E7%AE%97/#more)的文章，最近在学习python，就想着把之前的方法更新一下，写两个python练手的小项目。这次的项目一共有两个版本：`本地版local.py（需要用校园网或者easyconnect）`、`在线版（用的是[Moonkk](https://github.com/LittleMoonkk/Csuft-Office-Helper-FE)的数据,不需要用校园网或者easyconnect）`，本地版的比较麻烦。在线版的很方便，但是不是我的网站获得的数据，所以不保证能用。
 
-#### 软件架构
-软件架构说明
+<!-- more -->
 
+## 2.本地版
 
-#### 安装教程
+### 1.获取数据
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+首先连接校园网或easyconnect，登陆进校园网之后，输入课表信息的网址：[](http://jwgl.csuft.edu.cn/jsxsd/kscj/cjcx_list)
 
-#### 使用说明
+![](https://i.vgy.me/a8tev7.png)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+Ctrl+A全选后，打开根目录下的`grade.xlsx`文件，粘贴。这里在粘贴的时候会出现很多空白行，尽量删除掉，如果实在懒得删除也可以选择不删。![](https://i.vgy.me/yr3lbG.png)
 
-#### 参与贡献
+保存即可。
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+如果要按照学期或学年来计算平均绩点，只需![](https://i.vgy.me/tK1C64.png)
 
+1.删除第一行，点击“排序和筛选”
 
-#### 特技
+2.选择升序
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+3.点击确定
+
+4.删除不用计算的成绩
+
+5.保存即可
+
+### 2.计算绩点
+
+双击根目录下的`local.py`文件，若没有python环境可以双击`local.exe`文件，如果有使用Mac的同学可以帮忙打包成app文件。
+
+程序运行完毕后按照提示“你的绩点数据已经保存到根目录下的`gradePoint.xlsx`文件里，第一行即为绩点信息”。
+
+## 3.在线版
+
+双击`online.py`，或者对应的.exe文件，按照提示输出账号密码即可，不需要使用校园网或者easyconnect
+
+## 4.下载地址
+
+博客地址:
+http://fangyuan99.gitee.io/blog/2021/04/03/5%E5%88%86%E5%88%B6%E6%95%99%E5%8A%A1%E7%B3%BB%E7%BB%9F%E7%BB%A9%E7%82%B9%E8%AE%A1%E7%AE%972
+
+github:https://github.com/fangyuan99/gpa-calculator
+
+gitee:https://gitee.com/fangyuan99/gpa-calculator
+
+百度网盘:链接：  提取码：6666 
