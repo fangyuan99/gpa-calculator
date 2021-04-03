@@ -9,7 +9,7 @@
 
 ### 1.获取数据
 
-首先连接校园网或easyconnect，登陆进校园网之后，输入课表信息的网址：[](http://jwgl.csuft.edu.cn/jsxsd/kscj/cjcx_list)
+首先连接校园网或easyconnect，登陆进校园网之后，输入课表信息的网址：http://jwgl.csuft.edu.cn/jsxsd/kscj/cjcx_list
 
 ![](https://i.vgy.me/a8tev7.png)
 
